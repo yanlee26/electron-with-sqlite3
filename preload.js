@@ -4,7 +4,7 @@ const { connect } = require('trilogy')
 
 
 const db = connect('./store.db', {
-  client: 'sql.js'
+  client: 'sqlite3'
 })
 window.addEventListener('DOMContentLoaded', async() => {
   const users = await db.model('users', {
@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', async() => {
   }
 
 
-  
+
   console.log(await users.findOne({ name: 'anon' }))
   // -> { id: 1, name: 'anon', comments: 0, admin: false }
 

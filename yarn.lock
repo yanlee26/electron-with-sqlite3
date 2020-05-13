@@ -62,9 +62,9 @@
   integrity sha1-sU76iFK3do2JiQZhPCP2iHE+As0=
 
 "@types/node@^12.0.12":
-  version "12.12.38"
-  resolved "https://npm.xiaoheiban.cn/@types%2fnode/-/node-12.12.38.tgz#58841a382f231ad005dbb935c36d44aa1118a26b"
-  integrity sha1-WIQaOC8jGtAF27k1w21EqhEYoms=
+  version "12.12.39"
+  resolved "https://npm.xiaoheiban.cn/@types%2fnode/-/node-12.12.39.tgz#532d25c1e639d89dd6f3aa1d7b3962e3e7fa943d"
+  integrity sha1-Uy0lweY52J3W86odezli4+f6lD0=
 
 abbrev@1:
   version "1.1.1"
@@ -2839,9 +2839,9 @@ truncate-utf8-bytes@^1.0.0:
     utf8-byte-length "^1.0.1"
 
 tslib@^1.10.0:
-  version "1.11.2"
-  resolved "https://npm.xiaoheiban.cn/tslib/-/tslib-1.11.2.tgz#9c79d83272c9a7aaf166f73915c9667ecdde3cc9"
-  integrity sha1-nHnYMnLJp6rxZvc5Fclmfs3ePMk=
+  version "1.12.0"
+  resolved "https://npm.xiaoheiban.cn/tslib/-/tslib-1.12.0.tgz#d1fc9cacd06a1456c62f2902b361573e83d66473"
+  integrity sha1-0fycrNBqFFbGLykCs2FXPoPWZHM=
 
 tunnel@^0.0.6:
   version "0.0.6"

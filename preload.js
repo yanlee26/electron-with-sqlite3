@@ -4,7 +4,7 @@ const { connect } = require('trilogy')
 
 
 const db = connect('./store.db', {
-  client: 'sqlite3'
+  client: 'sql.js'
 })
 window.addEventListener('DOMContentLoaded', async() => {
   const users = await db.model('users', {

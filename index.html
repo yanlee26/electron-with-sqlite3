@@ -6,13 +6,14 @@
   <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
   <title>Hello World!</title>
   <style>
-    /* body {
+    body {
       padding: 0px;
       margin: 0px;
+      width: 100%;
+      height: 100%;
     }
 
     #title-bar {
-      -webkit-app-region: drag;
       height: 40px;
       text-align: center;
       line-height: 40px;
@@ -27,22 +28,20 @@
       top: 0px;
       left: 6px;
       color: white;
-
     }
 
     #title-bar-btns {
-      -webkit-app-region: no-drag;
       position: fixed;
       top: 0px;
       right: 6px;
-    } */
+    }
   </style>
 </head>
 
 <body>
-  <!-- <div id="title-bar">
+  <div id="title-bar">
     <div id="title">
-      <span style="vertical-align: middle;"><img src="https://raw.githubusercontent.com/zeke/atom-icon/master/old-icon/2.png" style="width:20px;height:20px;" /></span>
+      <span style="vertical-align: middle;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSoYG-3SBWGVE9KqqM3DDtz57UxWnrcbuoImXJxTIhje8wrdJAS&usqp=CAU" style="width:20px;height:20px;" /></span>
       Our Code World Frameless (But draggable,resizable and closable Window)
     </div>
     <div id="title-bar-btns">
@@ -53,13 +52,15 @@
   </div>
   <div style="text-align:center;">
     <h4>Electron rocks!</h4>
-    <img src="http://ourcodeworld.com/resources/img/ocw-empty.png" width="300" height="300" />
-  </div> -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSoYG-3SBWGVE9KqqM3DDtz57UxWnrcbuoImXJxTIhje8wrdJAS&usqp=CAU" width="300" height="300" />
+  </div>
 
   <h1>Hello World!</h1>
   We are using Node.js <span id="node-version"></span>,
   Chromium <span id="chrome-version"></span>,
   and Electron <span id="electron-version"></span>.
+
+
 
   <!-- You can also require other files to run in this process -->
   <script src="./renderer.js"></script>

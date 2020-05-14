@@ -1,70 +1,74 @@
 {
-  "name": "electron-sqlite3",
-  "version": "1.0.0",
-  "description": "A minimal Electron application with sqlite3",
-  "main": "main.js",
-  "author": {
-		"name": "yanlee26",
-		"email": "franklyan24@gmail.com",
-		"url": "https://example.com"
+ "name": "electron-sqlite3",
+ "version": "1.0.0",
+ "description": "A minimal Electron application with sqlite3",
+ "main": "main.js",
+ "author": {
+  "name": "yanlee26",
+  "email": "franklyan24@gmail.com",
+  "url": "https://example.com"
+ },
+ "homepage": "https://github.com/nashaofu/dingtalk#readme",
+ "scripts": {
+  "start": "electron .",
+  "pack-dir": "electron-builder --dir",
+  "pack-all": "electron-builder --mac --linux --win",
+  "postinstall": "electron-builder install-app-deps"
+
+ },
+ "keywords": [
+  "Electron",
+  "quick",
+  "start",
+  "tutorial",
+  "demo"
+ ],
+ "license": "CC0-1.0",
+ "devDependencies": {
+  "electron": "^8.2.5",
+  "electron-builder": "^21.2.0",
+  "electron-rebuild": "^1.11.0"
+ },
+ "dependencies": {
+  "electron-drag": "^1.2.2",
+  "express": "^4.17.1",
+  "sql.js": "^1.2.2",
+  "sqlite3": "^4.2.0",
+  "trilogy": "^2.0.2"
+ },
+ "build": {
+  "appId": "xx.company.AppName",
+  "mac": {
+   "category": "public.app-category.social-networking",
+   "darkModeSupport": true
   },
-  "homepage": "https://github.com/nashaofu/dingtalk#readme",
-  "scripts": {
-    "start": "electron .",
-    "pack-dir": "electron-builder --dir",
-    "pack-all": "electron-builder --mac --linux --win"
-  },
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "license": "CC0-1.0",
-  "devDependencies": {
-    "electron": "^8.2.5",
-    "electron-builder": "^21.2.0"
-  },
-  "dependencies": {
-    "express": "^4.17.1",
-    "sql.js": "^1.2.2",
-    "sqlite3": "^4.2.0",
-    "trilogy": "^2.0.2"
-  },
-  "build": {
-		"appId": "xx.company.AppName",
-		"mac": {
-			"category": "public.app-category.social-networking",
-			"darkModeSupport": true
-		},
-		"dmg": {
-			"iconSize": 160,
-			"contents": [
-				{
-					"x": 180,
-					"y": 170
-				},
-				{
-					"x": 480,
-					"y": 170,
-					"type": "link",
-					"path": "/Applications"
-				}
-			]
+  "dmg": {
+   "iconSize": 160,
+   "contents": [
+    {
+     "x": 180,
+     "y": 170
     },
-    "win": {
-      "icon": "resources/icon.ico",
-      "target": [
-        "nsis"
-      ]
-    },
-		"linux": {
-			"target": [
-				"AppImage",
-				"deb"
-			],
-			"category": "Network;Chat"
-		}
-	}
+    {
+     "x": 480,
+     "y": 170,
+     "type": "link",
+     "path": "/Applications"
+    }
+   ]
+  },
+  "win": {
+   "icon": "resources/icon.ico",
+   "target": [
+    "nsis"
+   ]
+  },
+  "linux": {
+   "target": [
+    "AppImage",
+    "deb"
+   ],
+   "category": "Network;Chat"
+  }
+ }
 }

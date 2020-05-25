@@ -278,13 +278,6 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
-bindings@^1.5.0:
-  version "1.5.0"
-  resolved "https://npm.xiaoheiban.cn/bindings/-/bindings-1.5.0.tgz#10353c9e945334bc0511a6d90b38fbc7c9c504df"
-  integrity sha1-EDU8npRTNLwFEabZCzj7x8nFBN8=
-  dependencies:
-    file-uri-to-path "1.0.0"
-
 bluebird-lst@^1.0.9:
   version "1.0.9"
   resolved "https://npm.xiaoheiban.cn/bluebird-lst/-/bluebird-lst-1.0.9.tgz#a64a0e4365658b9ab5fe875eb9dfb694189bb41c"
@@ -795,11 +788,6 @@ dmg-builder@21.2.0:
     js-yaml "^3.13.1"
     sanitize-filename "^1.6.2"
 
-dombo@^3.2.0:
-  version "3.2.0"
-  resolved "https://npm.xiaoheiban.cn/dombo/-/dombo-3.2.0.tgz#0be18a8f16de82770769bba53dfdad33d7d0de68"
-  integrity sha1-C+GKjxbegncHabulPf2tM9fQ3mg=
-
 dot-prop@^4.1.0:
   version "4.2.0"
   resolved "https://npm.xiaoheiban.cn/dot-prop/-/dot-prop-4.2.0.tgz#1f19e0c2e1aa0e32797c49799f2837ac6af69c57"
@@ -858,17 +846,6 @@ electron-builder@^21.2.0:
     sanitize-filename "^1.6.2"
     update-notifier "^3.0.1"
     yargs "^13.3.0"
-
-electron-drag@^1.2.2:
-  version "1.2.2"
-  resolved "https://npm.xiaoheiban.cn/electron-drag/-/electron-drag-1.2.2.tgz#09039b53e3e763f6cd4b159d5d5c1b28dc824a2c"
-  integrity sha1-CQObU+PnY/bNSxWdXVwbKNyCSiw=
-  dependencies:
-    dombo "^3.2.0"
-    try-require "^1.2.1"
-  optionalDependencies:
-    osx-mouse "^1.3.0"
-    win-mouse "^1.2.0"
 
 electron-publish@21.2.0:
   version "21.2.0"
@@ -1098,11 +1075,6 @@ fd-slicer@~1.1.0:
   integrity sha1-JcfInLH5B3+IkbvmHY85Dq4lbx4=
   dependencies:
     pend "~1.2.0"
-
-file-uri-to-path@1.0.0:
-  version "1.0.0"
-  resolved "https://npm.xiaoheiban.cn/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz#553a7b8446ff6f684359c445f1e37a05dacc33dd"
-  integrity sha1-VTp7hEb/b2hDWcRF8eN6BdrMM90=
 
 fill-range@^4.0.0:
   version "4.0.0"
@@ -2089,7 +2061,7 @@ ms@^2.1.1:
   resolved "https://npm.xiaoheiban.cn/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha1-0J0fNXtEP0kzgqjrPM0YOHKuYAk=
 
-nan@^2.12.1, nan@^2.13.2, nan@^2.14.0:
+nan@^2.12.1:
   version "2.14.1"
   resolved "https://npm.xiaoheiban.cn/nan/-/nan-2.14.1.tgz#d7be34dfa3105b91494c3147089315eff8874b01"
   integrity sha1-174036MQW5FJTDFHCJMV7/iHSwE=
@@ -2345,14 +2317,6 @@ osenv@^0.1.4:
   dependencies:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
-
-osx-mouse@^1.3.0:
-  version "1.4.0"
-  resolved "https://npm.xiaoheiban.cn/osx-mouse/-/osx-mouse-1.4.0.tgz#237d095e4d7d1d6c1722822e1cfbfe5ec1d009d1"
-  integrity sha1-I30JXk19HWwXIoIuHPv+XsHQCdE=
-  dependencies:
-    bindings "^1.5.0"
-    nan "^2.14.0"
 
 p-cancelable@^1.0.0:
   version "1.1.0"
@@ -3220,11 +3184,6 @@ truncate-utf8-bytes@^1.0.0:
   dependencies:
     utf8-byte-length "^1.0.1"
 
-try-require@^1.2.1:
-  version "1.2.1"
-  resolved "https://npm.xiaoheiban.cn/try-require/-/try-require-1.2.1.tgz#34489a2cac0c09c1cc10ed91ba011594d4333be2"
-  integrity sha1-NEiaLKwMCcHMEO2RugEVlNQzO+I=
-
 tslib@^1.10.0:
   version "1.12.0"
   resolved "https://npm.xiaoheiban.cn/tslib/-/tslib-1.12.0.tgz#d1fc9cacd06a1456c62f2902b361573e83d66473"
@@ -3438,14 +3397,6 @@ widest-line@^2.0.0:
   integrity sha1-dDh2RzDsfvQ4HOTfgvuYpTFCo/w=
   dependencies:
     string-width "^2.1.1"
-
-win-mouse@^1.2.0:
-  version "1.3.0"
-  resolved "https://npm.xiaoheiban.cn/win-mouse/-/win-mouse-1.3.0.tgz#9b60bc49f43d239386a35edd5c00e52797abba67"
-  integrity sha1-m2C8SfQ9I5OGo17dXADlJ5erumc=
-  dependencies:
-    bindings "^1.5.0"
-    nan "^2.13.2"
 
 wrap-ansi@^5.1.0:
   version "5.1.0"

@@ -1,11 +1,13 @@
+const path = require('path')
+const url = require('url')
 // Modules to control application life and create native browser window
 const {
   app,
   Tray,
   Menu,
+  ipcMain,
   BrowserWindow
 } = require('electron')
-const path = require('path')
 
 let mainWindow = null;
 
@@ -77,3 +79,23 @@ app.on('window-all-closed', function() {
 // code. You can also put them in separate files and require them here.
 
 app.allowRendererProcessReuse = false
+
+ipcMain.on('open-url', (_event, page) => {
+  console.log(page);
+  
+  const link = url.format({
+    protocol: 'file:',
+    pathname: path.resolve(app.getAppPath(), '.', page),
+    slashes: true
+  });
+  mainWindow.loadURL(link)
+});
+
+
+function getWin() {
+  return mainWindow
+}
+
+module.exports = {
+  getWin
+}

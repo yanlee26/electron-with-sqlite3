@@ -4,14 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-  <title>Hello World!</title>
+  <title>Hello sqlite3!</title>
   <style>
     body {
       padding: 0px;
-      margin: 0px;
+      margin: 24px;
       width: 100%;
       height: 100%;
+      -webkit-app-region:drag
     }
+    .flex{
+      display: flex;
+    }
+
+    .block {
+    background: #000;
+    width: 80vw;
+    min-height: 30vh;
+    /* max-height: 60vw; */
+    overflow: scroll;
+    color: azure;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-app-region: no-drag;
+  }
 
     #title-bar {
       height: 40px;
@@ -35,6 +51,17 @@
       top: 0px;
       right: 6px;
     }
+
+    button,
+    input,
+    img,
+    textarea {
+      -webkit-app-region: no-drag;
+    }
+
+    .no-select-bar {
+      -webkit-user-select: none;
+    }
   </style>
 </head>
 
@@ -50,19 +77,36 @@
       <button id="close-btn">x</button>
     </div>
   </div>
-  <div style="text-align:center;">
-    <h4>Electron rocks!</h4>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSoYG-3SBWGVE9KqqM3DDtz57UxWnrcbuoImXJxTIhje8wrdJAS&usqp=CAU" width="300" height="300" />
+
+  <h2>sqlite3</h2>
+  <div class="sqlite3">
+    <div>
+      <input placeholder="name" class="create-name" />
+      <input placeholder="age" class="create-age" />
+      <input placeholder="model" class="create-model" />
+      <br>
+      <br>
+      <div class="flex">
+        <button class="create-btn">create</button>
+        <button class="remove-btn">remove <span class="remove"></span></button>
+        <button class="clear-btn">clear</button>
+        <button class="update-btn">update</button>
+        <button class="find-btn">findOne</button>
+        <button class="find">find</button>
+        <button class="count-btn">count <span class="count"></span></button>
+      </div>
+      <br>
+      <br>
+      <div class="block"></div>
+
+    </div>
+
+    <h2>open</h2>
+    <button class="open-url" href='./foo.html' >go foo</button>
   </div>
 
-  <h1>Hello World!</h1>
-  We are using Node.js <span id="node-version"></span>,
-  Chromium <span id="chrome-version"></span>,
-  and Electron <span id="electron-version"></span>.
 
 
-
-  <!-- You can also require other files to run in this process -->
   <script src="./renderer.js"></script>
 </body>
 
